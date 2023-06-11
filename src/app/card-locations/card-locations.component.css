@@ -1,0 +1,14 @@
+.card-big {
+  font-size: 1.5rem;
+  color: var(--color-serie)
+}
+
+.location::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border: 1px solid var(--scrollbar-color);
+  border-radius: 20px;
+}
+
+.location::-webkit-scrollbar-thumb:hover {
+  border-color: var(--bg-Mcard);
+}

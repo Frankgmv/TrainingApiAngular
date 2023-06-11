@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* estilos comunes entre componentes */
+@import url("css/card.css");
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    padding-top: 100px;
+    background: var(--bg-url-2) 100%  no-repeat fixed ;
+    background-size: cover;
+}
+
+:root{
+    --color-main:#111;
+    --color-main-deg-1:rgba(17, 17, 17, 0.512);
+    --color-main-deg-2:rgba(17, 17, 17, 0.879);
+    --color-serie:#52df3f;
+    --color-serie-2:#3fdfcc;
+    --bg-url:url('./assets/fondo_rick_and_morty.png');
+    --bg-url-2:url('./assets/bg_rick_and_morty.png');
+    --bg-Mcard: #00ffffcc;
+    --bg-Mcard-2: #ff6600cc;
+    --scrollbar-color: #374334;
+}
+
+
+
+body::-webkit-scrollbar{
+    background-color: var(--color-main);
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar-color);
+    border: 1px solid var(--scrollbar-color);
+    border-radius: 5px;
+}  
+body::-webkit-scrollbar-thumb:hover{
+    border-color: var(--color-serie-2);
+}

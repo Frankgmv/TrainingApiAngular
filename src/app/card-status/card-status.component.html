@@ -1,0 +1,16 @@
+<a routerLink="" class="fondo"></a>
+<div class="container-2">
+    <div class="card-big status">
+        <div class="container-status" *ngFor="let person of Character">
+            <a routerLink="#">
+                <div class="giro-status"></div>
+                <div class="img-status"><img [src]="person.image" alt="{{person.name}}"></div>
+                <div class="text-status">
+                    <h6>{{person.name}}</h6>
+                    <p>{{person.origin.name}}</p>
+                    <p>{{person.status}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

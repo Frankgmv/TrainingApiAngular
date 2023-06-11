@@ -1,0 +1,38 @@
+/* Estilos en común para cada componente */
+
+.fondo {
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  position: fixed;
+  top: 100px;
+  background-color: var(--color-main-deg-1);
+}
+
+.container-big {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-big {
+  position: fixed;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 470px;
+  overflow-y: scroll;
+  background-color: var(--color-main-deg-2);
+  border-radius: 10px;
+  border: 5px outset var(--color-serie-2);
+  border-bottom-color: var(--color-serie);
+  border-right-color: var(--color-serie);
+  box-shadow: 2px 2px 22px 8px var(--color-main);
+  padding: 20px;
+}
+
+.card-big::-webkit-scrollbar {
+  background-color: var(--color-main);
+  width: 12px;
+}
